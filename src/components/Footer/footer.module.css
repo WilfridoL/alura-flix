@@ -1,20 +1,16 @@
-.encabezado{
+.footer{
   width: 100%;
   background: var(--header-bkc);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 42px 50px;
   box-sizing: border-box;
-  border-bottom: 4px solid var(--blue-400);
+  border-top: 4px solid var(--blue-400);
   filter: drop-shadow(5px 0px 45px var(--blue-400));
 }
 .logo{
   img{
     max-width: 170px;
   }
-}
-.links{
-  display: flex;
-  gap: 25px;
 }
