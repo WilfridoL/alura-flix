@@ -1,12 +1,26 @@
 {
   "videos": [
     {
-      "id":1,
-      "titulo":"",
-      "categoria":"",
-      "imagen":"",
-      "video":"",
-      "descripcion":""
+      "id": 1,
+      "titulo": "",
+      "categoria": "",
+      "imagen": "",
+      "video": "",
+      "descripcion": ""
+    }
+  ],
+  "categorias": [
+    {
+      "titulo": "FRONT-END",
+      "id": 1
+    },
+    {
+      "titulo": "BACK-END",
+      "id": 2
+    },
+    {
+      "titulo": "INNOVACIÓN Y FESTIÓN",
+      "id": 3
     }
   ]
 }
