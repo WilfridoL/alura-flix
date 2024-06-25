@@ -1,5 +1,4 @@
 import style from './btn.module.css'
-// const botonActivo
 
 const Botones = ({children, active}) => {
   const StyleActive = {

@@ -1,15 +1,15 @@
-import style from './Header.module.css'
+import styles from './header.module.css'
 import Botones from '../Button'
-
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
-    <header className={style.encabezado}>
-      <div className={style.logo}>
-      <img src="./img/Logo.svg" alt="" />
+    <header className={styles.encabezado}>
+      <div className={styles.logo}>
+        <Link to="/"><img src="./img/Logo.svg" alt="" /></Link>
       </div>
-      <ul className={style.links}>
-        <Botones active={true}>HOME</Botones>
-        <Botones>NUEVO VIDEO</Botones>
+      <ul className={styles.links}>
+        <Link to="/"><Botones active={true}>HOME</Botones></Link>
+        <Link to="/videos"><Botones>NUEVO VIDEO</Botones></Link>
       </ul>
     </header>
   )
