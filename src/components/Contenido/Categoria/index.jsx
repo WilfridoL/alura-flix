@@ -7,6 +7,10 @@ const Categorias = ({title, background, datosCard}) => {
       <h1 className={style.titulo} style={{backgroundColor:background}}>{title}</h1>
       <div className={style.cardContainer}>
         <Card db={datosCard}/>
+        <Card db={datosCard}/>
+        <Card db={datosCard}/>
+        <Card db={datosCard}/>
+        <Card db={datosCard}/>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 :root{
   --bck:#262626;
-  --header-bkc:rgba(0,0,0);
+  --header-bkc:rgba(0,0,0,90%);
   --light-gray:#A5A5A5;
   --white:#FFFFFF;
   --white-200:#F5F5F5;
