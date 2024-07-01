@@ -29,6 +29,7 @@
 .cardContainer::-webkit-scrollbar{
   background: rgb(34, 113, 209, 17%);
   border-radius: 20px;
+  height: 10px;
 }
 .cardContainer::-webkit-scrollbar-thumb{
   background-color: #2271D1;

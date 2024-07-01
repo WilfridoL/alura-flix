@@ -6,11 +6,9 @@ const Categorias = ({title, background, datosCard}) => {
     <div className={style.container}>
       <h1 className={style.titulo} style={{backgroundColor:background}}>{title}</h1>
       <div className={style.cardContainer}>
-        <Card db={datosCard}/>
-        <Card db={datosCard}/>
-        <Card db={datosCard}/>
-        <Card db={datosCard}/>
-        <Card db={datosCard}/>
+        {datosCard.map((event) => <Card 
+        datosCard={event}
+        key={event.id}/>)}
       </div>
     </div>
   )
