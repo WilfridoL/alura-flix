@@ -1,0 +1,32 @@
+.inputs{
+  display: block;
+}
+input, 
+select, 
+textarea{
+  width: 100%;
+  padding: 16px 10px;
+  background: none;
+  border: 3px solid var(--blue-400);
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  outline: none;
+  color: var(--white);
+}
+label{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+input::placeholder,
+textarea::placeholder,
+select{
+  color: var(--light-gray);
+}
+
+textarea{
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 112px;
+}
