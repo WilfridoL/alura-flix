@@ -4,6 +4,7 @@ import GlobalContext, { Contexto } from '../../../context/GobalContext'
 
 const Card = (props) => {
   const {categoria, imagen, id, titulo} = props.datosCard
+  const {openModal} = useContext(Contexto)
   // const {activarModal} = props
 
   const {activeModal} = useContext(Contexto)
@@ -17,7 +18,7 @@ const Card = (props) => {
           <img src="./img/icon/borrar-icon.svg" alt="icon-borrar" />
           <span>BORRAR</span>
         </button>
-        <button onClick={() => activeModal(props.datosCard)}>
+        <button onClick={() => openModal(props.datosCard)}>
           <img src="./img/icon/editar-icon.svg" alt="icon-editar" />
           <span>EDITAR</span>
         </button>

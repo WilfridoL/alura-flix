@@ -12,21 +12,25 @@ textarea{
   box-sizing: border-box;
   margin-top: 15px;
   outline: none;
-  color: var(--white);
+  font-size: 1rem;
+  color: var(--light-gray);
 }
 label{
   font-size: 20px;
   font-weight: 500;
 }
 
-input::placeholder,
-textarea::placeholder,
+
 select{
-  color: var(--light-gray);
-}
+  appearance: none;
+  background-image: url('./../../../public/img/icon/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+} 
 
 textarea{
   min-width: 100%;
   max-width: 100%;
   min-height: 112px;
+  font-family: "Roboto", sans-serif;
 }

@@ -1,4 +1,4 @@
-/* .overlay{
+.overlay{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -9,8 +9,8 @@
   align-items: center;
   z-index: 100;
   position: fixed;
-  
-} */
+  overflow: auto;
+}
 
 .edit{
   width: 700px;
