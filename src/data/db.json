@@ -1,92 +1,93 @@
 {
   "card-videos": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "equipo front end",
       "categoria": "FRONT END",
-      "imagen": "img-1-front-end.png",
+      "imagen": "./img/img-card/img-1-front-end.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "cuando usar let, var y const?",
       "categoria": "FRONT END",
-      "imagen": "img-2-front-end.png",
+      "imagen": "./img/img-card/img-2-front-end.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "¿que es javascript?",
       "categoria": "FRONT END",
-      "imagen": "img-3-front-end.png",
+      "imagen": "./img/img-card/img-3-front-end.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "spring framework",
       "categoria": "BACK END",
-      "imagen": "img-1-backend.png",
+      "imagen": "./img/img-card/img-1-backend.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": "¿que es sql y nosql?",
       "categoria": "BACK END",
-      "imagen": "img-2-backend.png",
+      "imagen": "./img/img-card/img-2-backend.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 6,
+      "id": "6",
       "titulo": "simplificando tu código en java conoce los enum",
       "categoria": "BACK END",
-      "imagen": "img-3-backend.png",
+      "imagen": "./img/img-card/img-3-backend.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 7,
+      "id": "7",
       "titulo": "¿qué son las soft skills?",
       "categoria": "INNOVACIÓN Y GESTIÓN",
-      "imagen": "img-1-innovacion-y-gestion.png",
+      "imagen": "./img/img-card/img-1-innovacion-y-gestion.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 8,
+      "id": "8",
       "titulo": "las 7 softskills más deseadas",
       "categoria": "INNOVACIÓN Y GESTIÓN",
-      "imagen": "img-2-innovacion-y-gestion.png",
+      "imagen": "./img/img-card/img-2-innovacion-y-gestion.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
     },
     {
-      "id": 9,
+      "id": "9",
       "titulo": "metodologias ágiles?",
       "categoria": "INNOVACIÓN Y GESTIÓN",
-      "imagen": "img-3-innovacion-y-gestion.png",
+      "imagen": "./img/img-card/img-3-innovacion-y-gestion.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
-    }],
+    }
+  ],
   "categorias": [
     {
       "titulo": "FRONT END",
       "color": "#6BD1FF",
-      "id": 1
+      "id": "1"
     },
     {
       "titulo": "BACK END",
       "color": "#00C86F",
-      "id": 2
+      "id": "2"
     },
     {
       "titulo": "INNOVACIÓN Y GESTIÓN",
       "color": "#FFBA05",
-      "id": 3
+      "id": "3"
     }
   ]
 }

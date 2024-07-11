@@ -9,6 +9,12 @@
   border: 5px solid var(--light-blue);
   box-shadow:inset 0 0 12px var(--light-blue);
 }
+.containerImg{
+  img{
+    width: 100%;
+    height: 260px;
+  }
+}
 .containerIconos{
   width: 100%;
   display: flex;

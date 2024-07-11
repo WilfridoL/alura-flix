@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const InputCategoria = ({actualizarCategoria, data}) => {
+const InputCategoria = ({actualizarCategoria, data, tipoDeEstilo}) => {
   const [categoria, setCategoria] = useState([])
   useEffect(() => {
     const getData = async () => {
@@ -14,10 +14,13 @@ const InputCategoria = ({actualizarCategoria, data}) => {
     actualizarCategoria(event.target.value)
     // console.log(event.target.value);
   }
+  const inputStyle = {
+    borderColor: tipoDeEstilo ? "var(--blue-400)": "#262626"
+  }
   return (<div>
     <label htmlFor="">Categoria</label>
-    <select name="" id="" value={data} onChange={actualizarOpciones}>
-      <option value="" defaultValue="" selected={true} hidden>Seleccione categoria</option>
+    <select name="" id="" value={data} onChange={actualizarOpciones} style={inputStyle}>
+      <option value="" defaultValue="" selected={true} hidden>Seleccione una categoría</option>
       {categoria.map(e => <option key={e.id} value={e.titulo}>{e.titulo.toLowerCase()}</option>)}
     </select>
   </div>

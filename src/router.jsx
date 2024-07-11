@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Base from "./pages/PaginaBase"
 import Home from "./pages/Home"
-import NuevoVideo from "./pages/Form"
+import NuevoVideo from "./pages/Nuevo Video"
 
 const AppRouter = () => {
   return <>

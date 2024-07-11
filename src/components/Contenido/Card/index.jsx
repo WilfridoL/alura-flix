@@ -11,7 +11,7 @@ const Card = (props) => {
   return (
     <div className={style.container}>
       <div className={style.containerImg}>
-        <img src={`./img/img-card/${imagen}`} alt={titulo} />
+        <img src={imagen} alt={titulo} />
       </div>
       <div className={style.containerIconos}>
         <button>

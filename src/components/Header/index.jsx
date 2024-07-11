@@ -12,8 +12,8 @@ const Header = () => {
         <Link to="/"><img src="./img/Logo.svg" alt="" /></Link>
       </div>
       <ul className={styles.links}>
-        <Link to="/"><Botones active={activarBtnHome}>HOME</Botones></Link>
-        <Link to="/nuevo-video"><Botones active={activarBtnVideo}>NUEVO VIDEO</Botones></Link>
+        <Link to="/"><Botones active={activarBtnHome} tipoDeEstilo={true}>HOME</Botones></Link>
+        <Link to="/nuevo-video"><Botones active={activarBtnVideo} tipoDeEstilo={true}>NUEVO VIDEO</Botones></Link>
       </ul>
     </header>
   )

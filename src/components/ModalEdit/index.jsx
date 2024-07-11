@@ -34,26 +34,31 @@ const EditCardModal = () => {
               placeholder={"título"}
               type={"text"}
               datos={dataTitulo}
-              datosEscritos={setdataTitulo} />
+              datosEscritos={setdataTitulo} 
+              tipoDeEstilo={true}/>
             <InputCategoria
               data={dataCategoria}
-              actualizarCategoria={setdataCategoria} />
+              actualizarCategoria={setdataCategoria} 
+              tipoDeEstilo={true}/>
             <CampoDeTexto
               name={"Imagen"}
               placeholder={"enlace de la imagen"}
               type={"url"}
               datos={dataImg}
-              datosEscritos={setdataImg} />
+              datosEscritos={setdataImg} 
+              tipoDeEstilo={true}/>
             <CampoDeTexto
               name={"Video"}
               placeholder={"enlace del video"}
               type={"url"}
               datos={dataVideo}
-              datosEscritos={setdataVideo} />
+              datosEscritos={setdataVideo} 
+              tipoDeEstilo={true}/>
             <InputDescripcion
               placeholder={"de que trata este video"}
               datos={dataDescripcion}
-              datosEscritos={setdataDescripcion} />
+              datosEscritos={setdataDescripcion} 
+              tipoDeEstilo={true}/>
             <div className={style.botones}>
               <Botones active={true} type={"submit"}>Guadar</Botones>
               <Botones type={"button"} eventoClick={limpiar}>Limpiar</Botones>
