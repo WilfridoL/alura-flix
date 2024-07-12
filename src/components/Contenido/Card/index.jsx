@@ -14,7 +14,7 @@ const Card = (props) => {
         <img src={imagen} alt={titulo} />
       </div>
       <div className={style.containerIconos}>
-        <button>
+        <button onClick={() => props.eliminar(id)}>
           <img src="./img/icon/borrar-icon.svg" alt="icon-borrar" />
           <span>BORRAR</span>
         </button>

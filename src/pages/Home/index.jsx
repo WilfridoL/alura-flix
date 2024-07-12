@@ -7,17 +7,31 @@ import { Contexto } from '../../context/GobalContext'
 import CampoDeTexto from '../../components/Imputs'
 
 const Home = () => {
-  const {estaAbierto} = useContext(Contexto)
-  // if(estaAbierto){
-  //   const bodyFixed = {
-  //     overflow: hidden
-  //   }
-  // }
+  const { closeModal} = useContext(Contexto)
+  
+  const actualizarCard = async (event, id) => {
+    console.log("datos recividos", event);
+    const response = await fetch(`http://localhost:3000/card-videos/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(event),
+    });
+  
+    if (!response.ok) {
+      throw new Error('Error en la solicitud: ' + response.statusText);
+    }
+    window.location.reload()
+    closeModal()
+    return await response.json();
+  }
+  const { estaAbierto } = useContext(Contexto)
 
   return (<div className={style.container}>
     <Banner />
     <Contenido />
-    <EditCardModal/>
+    <EditCardModal actualizar={actualizarCard} />
   </div>
   )
 }

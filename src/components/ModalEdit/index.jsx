@@ -7,7 +7,7 @@ import InputDescripcion from "../Imputs/ImputTextArea"
 import Botones from "../Button"
 
 
-const EditCardModal = () => {
+const EditCardModal = ({actualizar}) => {
   const { estaAbierto, closeModal, dataCard } = useContext(Contexto)
   if (estaAbierto) {
     const { categoria, imagen, id, titulo, descripcion, video } = dataCard
@@ -23,11 +23,24 @@ const EditCardModal = () => {
       setdataCategoria("")
       setdataDescripcion("")
     }
+    function enviarDatos(e) {
+      e.preventDefault()
+      console.log("datos a actualizar ",categoria, imagen, id, titulo, descripcion, video);
+      let datosRecibidos = {
+        titulo: dataTitulo,
+        categoria: dataCategoria,
+        imagen: dataImg,
+        video: dataVideo,
+        descripcion: dataDescripcion
+      }
+      actualizar(datosRecibidos, id)
+    }
+
     return <>
       <div className={style.overlay}>
         <dialog className={style.edit}>
           <button type="button" className={style.exit} onClick={closeModal}><img src="./img/icon/cross.svg" alt="" /></button>
-          <form action="">
+          <form action="" onSubmit={enviarDatos}>
             <h2>EDITAR CARD:</h2>
             <CampoDeTexto
               name={"Título"}

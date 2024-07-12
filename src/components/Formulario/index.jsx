@@ -5,7 +5,7 @@ import InputDescripcion from "../Imputs/ImputTextArea"
 import Botones from "../Button"
 
 
-const Form = ({ inputStyle }) => {
+const Form = ({ inputStyle, metodo }) => {
   const styleForm = {
     display: inputStyle ? "block" : "grid",
     gridTemplateColumns: "repeat(2, 1fr)",
@@ -35,7 +35,7 @@ const Form = ({ inputStyle }) => {
 
   function enviarDatos(e) {
     e.preventDefault()
-    console.log("manejar envio");
+    // console.log("manejar envio");
     let datosRecibidos = {
       titulo,
       categoria,
@@ -43,7 +43,7 @@ const Form = ({ inputStyle }) => {
       video,
       descripcion
     }
-    console.log(datosRecibidos)
+    metodo(datosRecibidos)
   }
   return <>
     <form action="" onSubmit={enviarDatos}>
