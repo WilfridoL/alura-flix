@@ -1,6 +1,6 @@
 import style from './inputsStyle.module.css'
 
-const CampoDeTexto = ({name, type, placeholder, datos, datosEscritos, tipoDeEstilo}) => {
+const CampoDeTexto = ({name, type, placeholder, datos, datosEscritos, tipoDeEstilo, requerido}) => {
   const actualizarTexto = (event) => {
     datosEscritos(event.target.value)
     // console.log(datos);
@@ -15,7 +15,7 @@ const CampoDeTexto = ({name, type, placeholder, datos, datosEscritos, tipoDeEsti
       placeholder={`ingrese el ${placeholder}`} 
       value={datos} 
       onChange={actualizarTexto}
-      className={style.inputs} style={inputStyle}/>
+      className={style.inputs} style={inputStyle} required={requerido}/>
     </div>
   )
 }

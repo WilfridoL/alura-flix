@@ -1,13 +1,13 @@
+import { useEffect, useState } from 'react'
 import Categorias from './Categoria'
 import style from './contenido.module.css'
-import { useState, useEffect } from 'react'
 
 const Contenido = () => {
-  const [categoria, setCategoria] = useState([])
   const [video, setVideo] = useState([])
+  const [categoria, setCategoria] = useState([])
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch('http://localhost:3000/categorias')
+      const res = await fetch('https://faker-api-three.vercel.app/categorias')
       const data = await res.json()
       setCategoria([...data])
     }
@@ -15,12 +15,13 @@ const Contenido = () => {
   }, [])
   useEffect(() => {
     const getDataVideo = async () => {
-      const res = await fetch('http://localhost:3000/card-videos')
+      const res = await fetch('https://faker-api-three.vercel.app/card-videos')
       const data = await res.json()
       setVideo([...data])
     }
     getDataVideo()
   }, [])
+
   return (
     <div className={style.container}>
       {categoria.map(event => <Categorias 

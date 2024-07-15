@@ -71,22 +71,6 @@
       "imagen": "./img/img-card/img-3-innovacion-y-gestion.png",
       "video": "",
       "descripcion": "lorem ipsum blah blah blah"
-    },
-    {
-      "id": "89cf",
-      "titulo": "a",
-      "categoria": "",
-      "imagen": "https://i.ytimg.com/vi/-AcEozXWKzI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV0xuTiS-dLakdMN60tqxDdCgohg",
-      "video": "https://i.ytimg.com/vi/-AcEozXWKzI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV0xuTiS-dLakdMN60tqxDdCgohg",
-      "descripcion": "a"
-    },
-    {
-      "id": "3f5e",
-      "titulo": "aaaaa",
-      "categoria": "",
-      "imagen": "http://localhost:5173/nuevo-video",
-      "video": "http://localhost:5173/nuevo-video",
-      "descripcion": "aaaaaaaaaaaaaaaaaa"
     }
   ],
   "categorias": [
