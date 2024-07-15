@@ -12,6 +12,7 @@ const Categorias = ({title, background, datosCard}) => {
         {datosCard.map((event) => <Card 
         datosCard={event}
         key={event.id}
+        border={background}
         eliminar={eliminarCard}/>)}
       </div>
     </div>

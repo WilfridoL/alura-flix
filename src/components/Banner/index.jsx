@@ -20,7 +20,8 @@ const Banner = () => {
         </div>
       </div>
       <div className={style.imagen}>
-        <img src={img} alt="a" />
+        <div className={style.sombra_interna}/>
+          <img src={img} alt="a" />
       </div>
       </div>
     </div>

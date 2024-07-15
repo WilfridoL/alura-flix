@@ -4,7 +4,7 @@ const InputCategoria = ({actualizarCategoria, data, tipoDeEstilo, requerido}) =>
   const [categoria, setCategoria] = useState([])
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch('http://localhost:3000/categorias')
+      const res = await fetch('https://faker-api-three.vercel.app/categorias')
       const data = await res.json()
       setCategoria([...data])
     }

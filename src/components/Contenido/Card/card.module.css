@@ -7,13 +7,24 @@
   overflow: hidden;
   border-radius: 15px;
   border: 5px solid var(--light-blue);
-  box-shadow:inset 0 0 12px var(--light-blue);
+  margin: 0px;
+  /* box-shadow:inset 0 0 12px var(--light-blue); */
 }
 .containerImg{
+  width: 100%;
+  height: 263px;
+  position: relative;
   img{
     width: 100%;
-    height: 260px;
+    height: 100%;
   }
+}
+.sombra_interna{
+  position: absolute;
+  box-shadow: inset 0 0 17px var(--light-blue);
+  width: 100%;
+  height: 100%;
+  background: none;
 }
 .containerIconos{
   width: 100%;
@@ -21,7 +32,10 @@
   align-items: center;
   justify-content: space-around;
   padding: 15px 0px;
+  /* box-shadow:inset 0 0 12px var(--light-blue); */
   background: var(--header-bkc);
+  border-top: 5px solid var(--light-blue);
+
   button{
     display: flex;
     align-items: center ;

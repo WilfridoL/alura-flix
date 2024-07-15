@@ -62,20 +62,28 @@
 }
 
 .imagen {
-  max-width: 600px;
+  width: 600px;
+  height: auto;
   overflow: hidden;
   /* z-index: 10; */
   border-radius: 15px;
   border: 5px solid var(--light-blue);
   background: none;
+  position: relative;
   
-  box-shadow: inset 0 0 17px var(--light-blue);
   /* z-index: 10; */
   img {
     width: 100%;
     height: 100%;
-    z-index: -100;
+    z-index: 100;
   }
+}
+.sombra_interna{
+  position: absolute;
+  box-shadow: inset 0 0 17px var(--light-blue);
+  width: 100%;
+  height: 100%;
+  background: none;
 }
 
 @media (max-width:1024px) {
